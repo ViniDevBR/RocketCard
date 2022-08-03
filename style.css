@@ -3,27 +3,89 @@
   font-size: 62.5%; /* 1rem = 10px */
   font-family: 'Prompt', sans-serif;
   color: var(--text-color);
-  --text-color: #ffffff;
+  --text-color: #FFFFFF;
+  --border-color: #F1F1F1;
+  --bg-color: #0E1218;
+  --border-img-color: #8257E5;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container{
-  background-color: #0E1218;
+body{
+  background-color: var(--bg-color);
+
 }
+.container{
+  border-radius: 50px;
+  background-color: #000;
+  padding: 2rem 1rem;
+}
+.card{
+  background-color: var(--bg-color);
+  border-radius: 50px;
+}
+/*////////////////////////////////
+              HEADER
+////////////////////////////////*/
 header{
   display: flex;
   align-items: center;
+  font-size: 2.4rem;
+  padding: 3rem 0 1rem 3rem;
 }
 .logoHeader{
-  text-align: center;
-  border: 1px solid #f1f1f1;
+  display: flex;
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   padding: 1rem;
+  margin: 0 2rem 0 0;
 }
 header img{
   width: 3.5rem;
   height: 3.5rem;
+}
+/*////////////////////////////////
+              MAIN
+////////////////////////////////*/
+main{
+  position: relative;
+}
+main > img{
+  width: 30rem;
+  border: 10px solid var(--border-img-color);
+  border-radius: 50%;
+  margin: 0 0 6rem 3rem;
+}
+ul{
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  margin-left: 1rem;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #000000 3.65%, #464545b8 53.65%, #3e38386b 100%);
+}
+ul li{
+  display: flex;
+  align-items: center;
+  line-height: 2.4rem;
+}
+li p{
+  margin-left: 1rem;
+}
+/*////////////////////////////////
+             FOOTER
+////////////////////////////////*/
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 3rem 2rem 3rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+footer img{
+  width: 3rem;
+  margin: 0 1rem 0 0;
 }
