@@ -6,9 +6,9 @@ function getUser(){
     .then(data => {
       userPhoto.src = data.avatar_url
       userName.textContent = data.login
-      userFollowers.textContent = data.followers
-      userFollowing.textContent = data.following
-      userRepo.textContent = data.public_repos
+      userFollowers.textContent =`${data.followers} Followers`
+      userFollowing.textContent = `${data.following} Following`
+      userRepo.textContent =  `${data.public_repos} Repositories`
       userCompany.textContent = data.company
       userLocation.textContent = data.location
     })
