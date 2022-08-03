@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RocketCard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./api.js" defer></script>
   <script src="./change-colors.js"></script>
@@ -16,32 +19,27 @@
         <p id="userName"></p>
       </header>
       <main>
-        <img src="" alt="foto do usuario">
+        <img src="" alt="foto do usuario" id="userPhoto">
         <ul>
-          <li id="userFollowers">
-            <span>
-              <img src="images/followers.svg" alt="">
-            </span> 
+          <li>
+            <img src="images/followers.svg" alt="">
+            <p id="userFollowers"></p>
           </li>
-          <li id="userFollowing">
-            <span>
-              <img src="images/following.svg" alt="">
-            </span> 
+          <li>
+            <img src="images/following.svg" alt="">
+            <p id="userFollowing"></p>
           </li>
-          <li id="userRepo">
-            <span>
-              <img src="images/repository.svg" alt="">
-            </span> 
+          <li>
+            <img src="images/repository.svg" alt="">
+            <p id="userRepo"></p>
           </li>
-          <li id="userCompany">
-            <span>
-              <img src="images/company.svg" alt="">
-            </span> 
+          <li>
+            <img src="images/company.svg" alt="">
+            <p id="userCompany"></p>
           </li>
-          <li id="userLocation">
-            <span>
-              <img src="images/location.svg" alt="">
-            </span> 
+          <li>
+            <img src="images/location.svg" alt="">
+            <p id="userLocation"></p>
           </li>
         </ul>
       </main>
