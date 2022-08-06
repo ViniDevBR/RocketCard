@@ -28,10 +28,10 @@
             <div class="ballC"></div>
           </div>
           <nav>
-            <form action="">
+            <form onsubmit="event.preventDefault(); getUser()">
               <label for="searchUser">Search user</label>
               <input type="search" id="searchUser" placeholder="User Name">
-              <input type="submit" id="submit" value="Search" onclick="showUser()">
+              <input type="submit" id="submit" value="Search">
             </form>
           </nav>
         </header>
