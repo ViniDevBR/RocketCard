@@ -6,6 +6,7 @@
   --text-color: #FFFFFF;
   --border-color: #F1F1F1;
   --bg-color: #0E1218;
+  --container-bg-color: #000000;
   --border-img-color: #8257E5;
 }
 *{
@@ -18,7 +19,7 @@ body{
 }
 .container{
   border-radius: 50px;
-  background-color: black;
+  background-color: var(--container-bg-color);
   padding: 2rem 1rem;
 }
 .card{
@@ -35,7 +36,7 @@ header{
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 2.4rem;
-  padding: 3rem 0 1rem 3rem;
+  padding: 2rem 0 1rem 2rem;
 }
 header .boxInfoHeader{
   display: flex;
@@ -165,4 +166,88 @@ footer{
 footer img{
   width: 3rem;
   margin: 0 1rem 0 0;
+}
+@media (min-width: 375px){
+
+  main > img{
+    width: 35rem;
+    margin: 3rem 0 6rem 5rem;
+  }
+  ul{
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 425px){
+  
+  main > img{
+    width: 38rem;
+    margin: 3rem 0 6rem 8rem;
+  }
+}
+@media (min-width: 600px){
+  
+  .container{
+    width: 400px;
+  }
+  .card{
+    overflow-x: hidden;
+  }
+
+  /*//////////// HEADER /////////*/
+
+  header{
+    font-size: 3rem;
+  }
+  .logoHeader{
+    padding: 1.5rem;
+  }
+  header img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /*//////////// MENU //////////*/
+
+  .menu{
+    display: none;
+  }
+  /*////////////////////////////////
+                NAV
+  ////////////////////////////////*/
+  nav{
+/*     order: ; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width: 100%;
+    height: 100%; */ 
+    padding: 6.6rem;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  
+  /*/////////////// MAIN //////////////*/
+  main > img{
+    width: 38rem;
+    margin: 3rem 0 6rem 7rem;
+  }
+  li p{
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  li:nth-child(4) img{
+    height: 2rem;
+  }
+  li img{
+    width: 2.5rem;
+  }
+
+  /*///////////// FOOTER ///////////*/
+  
+  footer{
+    font-size: 2.4rem;
+  }
+  footer img{
+    width: 4rem;
+  }
 }
