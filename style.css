@@ -167,6 +167,11 @@ footer img{
   width: 3rem;
   margin: 0 1rem 0 0;
 }
+
+/*////////////////////////////////
+          SCRENN 375px
+////////////////////////////////*/
+
 @media (min-width: 375px){
 
   main > img{
@@ -177,20 +182,27 @@ footer img{
     margin-left: 2rem;
   }
 }
+
+/*////////////////////////////////
+          SCRENN 425px
+////////////////////////////////*/
+
 @media (min-width: 425px){
-  
+
   main > img{
     width: 38rem;
     margin: 3rem 0 6rem 8rem;
   }
 }
-@media (min-width: 600px){
+
+/*////////////////////////////////
+          SCRENN 750px
+////////////////////////////////*/
+
+@media (min-width: 750px){
   
   .container{
     width: 400px;
-  }
-  .card{
-    overflow-x: hidden;
   }
 
   /*//////////// HEADER /////////*/
@@ -211,22 +223,33 @@ footer img{
   .menu{
     display: none;
   }
+
   /*////////////////////////////////
                 NAV
   ////////////////////////////////*/
-  nav{
-/*     order: ; */
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* width: 100%;
-    height: 100%; */ 
-    padding: 6.6rem;
-    text-align: center;
-    font-size: 2.4rem;
-  }
   
+  nav{
+    right: 0;
+    width: 48%;
+    height: 0; 
+    padding: 6rem;
+    font-size: 3rem;
+    background-color: transparent;
+  }
+  nav form{
+    display: flex;
+    flex-direction: column;
+  }
+  form input{
+    height: 4rem;
+    font-size: 2rem;
+  }
+  #submit{
+    height: 4rem;
+  }
+
   /*/////////////// MAIN //////////////*/
+  
   main > img{
     width: 38rem;
     margin: 3rem 0 6rem 7rem;
