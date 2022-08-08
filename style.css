@@ -182,8 +182,6 @@ footer img{
   main > .picContainer{
     width: 35rem;
     height: 35rem;
-    border: 10px solid var(--border-img-color);
-    border-radius: 50%;
     margin: 3rem 0 6rem 4.5rem;
   }
   ul{
@@ -200,8 +198,6 @@ footer img{
   main > .picContainer{
     width: 38rem;
     height: 38rem;
-    border: 10px solid var(--border-img-color);
-    border-radius: 50%;
     margin: 3rem 0 6rem 7rem;
   }
 }
@@ -210,17 +206,6 @@ footer img{
 ////////////////////////////////*/
 
 @media (min-width: 450px){
-
- /*  header{
-    font-size: 3rem;
-  } */
- /*  .logoHeader{
-    padding: 1.5rem;
-  } */
-/*   header img{
-    width: 4rem;
-    height: 4rem;
-  } */
 
   /*///////// NAV /////////////*/
   
@@ -250,15 +235,6 @@ footer img{
   li img{
     width: 2.5rem;
   }
-  
-  /*///////// FOOTER /////////////*/
-  
-  /* footer{
-    font-size: 2.4rem;
-  }
-  footer img{
-    width: 4rem;
-  } */
 }
 
 /*////////////////////////////////
@@ -266,16 +242,10 @@ footer img{
 ////////////////////////////////*/
 
 @media (min-width: 480px){
-  body{
-    display: grid;
-    grid-template-rows: 665px 1fr;
-    grid-template-areas: 'container'
-                         'nav' ;
-  }
+
   .container{
     width: 375px;
     margin: auto;
-    grid-area: 'container';
   }
   .menu{
     display: none;
@@ -290,7 +260,6 @@ footer img{
   /*/////////// NAV /////////*/
 
   nav{
-    grid-area: 'nav';
     position: absolute;
     top: auto;
     bottom: 0;
