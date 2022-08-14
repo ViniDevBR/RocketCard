@@ -16,6 +16,10 @@
 }
 body{
   background-color: var(--bg-color);
+  overflow: hidden;
+}
+body.menuClose{
+  overflow: initial;
 }
 .container{
   border-radius: 50px;
@@ -233,6 +237,12 @@ footer img{
 ////////////////////////////////*/
 
 @media (min-width: 480px){
+  body{
+    overflow: initial;
+  }
+  body.menuClose{
+    overflow: initial;
+  }
   .container{
     margin-top: 1rem;
     width: 375px;
@@ -260,6 +270,9 @@ footer img{
   }
   form label{
     padding: 2rem;
+  }
+  .on{
+    right: 0;
   }
 }
 
@@ -381,7 +394,7 @@ footer img{
           SCREEN 2500px
 ////////////////////////////////*/
 
-@media (min-width: 1400px) {
+@media (min-width: 2500px) {
   .container{
     width: 32%;
     max-width: 40%;
