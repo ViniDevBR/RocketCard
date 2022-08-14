@@ -376,3 +376,83 @@ footer img{
     width: 3.5rem;
   }
 }
+
+/*////////////////////////////////
+          SCREEN 2500px
+////////////////////////////////*/
+
+@media (min-width: 1400px) {
+  .container{
+    width: 32%;
+    max-width: 40%;
+    margin: 6rem 0 0 6rem;
+  }
+
+  /*////////////// HEADER ///////////*/
+
+  header{
+    padding: 4rem 0 4rem 4rem;
+  }
+  .logoHeader{
+    padding: 2rem;
+    border: 2px solid var(--border-color);
+  }
+  header img{
+    width: 7rem;
+    height: 7rem;
+  }
+  .boxInfoHeader{
+    font-size: 5rem;
+  }
+
+  /*//////////////// MAIN /////////////*/
+
+  main > .picContainer{
+    width: 80rem;
+    height: 80rem;
+    margin: 3rem 0 19rem 13rem;
+    border: 20px solid var(--border-img-color);
+  }
+  ul{
+    margin-left: 4rem;
+    padding: 3rem;
+  }
+  li p{
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  li img{
+    width: 6rem;
+  }
+  li:nth-child(4) img{
+    height: 4.5rem;
+  }
+
+  /*//////////////////// NAV ///////////*/
+
+  nav{
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem ;
+  }
+  form label{
+    padding: 2rem;
+    font-size: 7rem;
+  }
+  form input{
+    margin-bottom: 2rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding-inline: 2rem;
+  }
+  
+  /*//////////////////// FOOTER ///////////*/
+
+  footer{
+    font-size: 4rem;
+    padding: 5rem 4rem 5rem 0;
+  }
+  footer img{
+    width: 5.5rem;
+    margin: 0 2rem 0 0;
+  }
+}
