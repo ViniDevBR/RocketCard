@@ -211,7 +211,6 @@ footer img{
   .container{
     max-width: 425px;
   }
-
   main > .picContainer{
     width: 38rem;
     height: 38rem;
@@ -269,7 +268,6 @@ footer img{
 ////////////////////////////////*/
 
 @media (min-width: 750px){
-  
   .container{
     width: 400px;
     margin: 2rem 0 0 2rem;
@@ -288,9 +286,9 @@ footer img{
     top: 0;
     bottom: auto;
     right: 0;
-    width: 330px;
+    width: 45%;
     height: auto; 
-    padding: 6.5rem 2rem 0 3rem ;
+    padding: 6.5rem 5% 0 5% ;
     font-size: 3rem;
   }
 
@@ -298,5 +296,83 @@ footer img{
   
   main > .picContainer{
     margin: 3rem 0 6rem 6rem;
+  }
+}
+
+/*////////////////////////////////
+          SCREEN 1024px
+////////////////////////////////*/
+
+@media (min-width: 1024px) {
+  nav{
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem ;
+  }
+}
+
+/*////////////////////////////////
+          SCREEN 1400px
+////////////////////////////////*/
+
+@media (min-width: 1400px) {
+  .container{
+    width: 600px;
+    margin: 4rem 0 0 4rem;
+  }
+
+  /*////////////// HEADER ///////////*/
+
+  .logoHeader{
+    padding: 1.5rem;
+  }
+  header img{
+    width: 5rem;
+    height: 5rem;
+  }
+  .boxInfoHeader{
+    font-size: 3.5rem;
+  }
+
+  /*//////////////// MAIN /////////////*/
+
+  main > .picContainer{
+    margin: 3rem 0 6rem 8rem;
+  }
+  li p{
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  li img{
+    width: 3rem;
+  }
+  li:nth-child(4) img{
+    height: 2.3rem;
+  }
+
+  /*//////////////////// NAV ///////////*/
+
+  nav{
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem ;
+  }
+  form label{
+    padding: 2rem;
+  }
+  form input{
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    border: none;
+    height: 4rem;
+    font-size: 2rem;
+    padding-inline: 1rem;
+  }
+  
+  /*//////////////////// FOOTER ///////////*/
+
+  footer{
+    font-size: 2.5rem;
+  }
+  footer img{
+    width: 3.5rem;
   }
 }
