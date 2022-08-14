@@ -29,9 +29,11 @@ body{
   border-radius: 50px;
   overflow-x: hidden;
 }
+
 /*////////////////////////////////
               HEADER
 ////////////////////////////////*/
+
 header{
   display: flex;
   align-items: center;
@@ -56,9 +58,11 @@ header img{
   width: 3.5rem;
   height: 3.5rem;
 }
+
 /*////////////////////////////////
               MENU
 ////////////////////////////////*/
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -78,9 +82,11 @@ header img{
 .ballB{
   margin-block: 4px;
 }
+
 /*////////////////////////////////
               NAV
 ////////////////////////////////*/
+
 nav{
   position: absolute;
   right: 0;
@@ -125,9 +131,11 @@ input:not(:placeholder-shown) + #submit{
   position: absolute;
   right: 100%;
 }
+
 /*////////////////////////////////
               MAIN
 ////////////////////////////////*/
+
 main{
   position: relative;
   text-align: end;
@@ -159,9 +167,11 @@ ul li{
 li p{
   margin-left: 1rem;
 }
+
 /*////////////////////////////////
              FOOTER
 ////////////////////////////////*/
+
 footer{
   display: flex;
   align-items: center;
