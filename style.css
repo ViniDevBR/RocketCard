@@ -240,9 +240,6 @@ footer img{
   body{
     overflow: initial;
   }
-  body.menuClose{
-    overflow: initial;
-  }
   .container{
     margin-top: 1rem;
     width: 375px;
