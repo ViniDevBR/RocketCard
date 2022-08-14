@@ -21,3 +21,4 @@ function getUser(){
     })
     .catch(error => console.error(error))
 }
+console.log('Open to work now!')
