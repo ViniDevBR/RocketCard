@@ -15,9 +15,9 @@ function getUser(){
       userRepo.textContent =  `${data.public_repos} 
                                ${data.public_repos === 1 ? 'Repositorie' : 'Repositories'}`
 
-      userCompany.textContent = `${data.company === null ? 'Unknow' : data.company}`
+      userCompany.textContent = `${data.company === null ? 'Unknown' : data.company}`
 
-      userLocation.textContent = `${data.location === null ? 'Unknow' : data.location}`
+      userLocation.textContent = `${data.location === null ? 'Unknown' : data.location}`
     })
     .catch(error => console.error(error))
 }
