@@ -1,10 +1,11 @@
 <h1 align="center">
-  Rocketcard
+  RocketCard
 </h1>
 
 ## 💻 Project
 
 This project has the main goal to develop a card.
+
 Additionally: It was implemented a form, where the user can type a name of a Github user and fetch all the information to the card and new menu page in responsive.
 All the content will be dinamically generated to the card, using Github service (API) from [GithubAPI](https://docs.github.com/pt/rest).
 
@@ -24,3 +25,4 @@ In order to know the format and how the project should be developed, it was used
 - [x] Global variables inserted in css on `:root`
 - [x] Integration with Google Fonts
 - [x] Added an input field to search for a new user
+- [x] Added a new page for search the user
