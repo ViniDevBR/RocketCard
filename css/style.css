@@ -1,0 +1,434 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: "Prompt", sans-serif;
+  color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e1218;
+  overflow: hidden;
+}
+body.menuClose {
+  overflow: initial;
+}
+
+.container {
+  border-radius: 50px;
+  background-color: #000000;
+  padding: 2rem 1rem;
+  margin: auto;
+  max-width: 320px;
+}
+
+.card {
+  background-color: #0e1218;
+  border-radius: 50px;
+  overflow-x: hidden;
+}
+
+/*////////////////////////////////
+              HEADER
+////////////////////////////////*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2.4rem;
+  padding: 2rem 0 1rem 2rem;
+}
+header .boxInfoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logoHeader {
+  display: flex;
+  border: 1px solid #f1f1f1;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 1.5rem 0 0;
+}
+
+/*////////////////////////////////
+              MENU
+////////////////////////////////*/
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.ballA,
+.ballB,
+.ballC {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.ballB {
+  margin-block: 4px;
+}
+
+/*////////////////////////////////
+              NAV
+////////////////////////////////*/
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 5.3rem 6rem 0 6rem;
+  text-align: center;
+  font-size: 2.4rem;
+  background-color: rgba(130, 87, 229, 0.431372549);
+  backdrop-filter: blur(5px);
+  transition: right 0.5s;
+}
+nav form {
+  display: flex;
+  flex-direction: column;
+}
+nav form label {
+  padding-bottom: 3rem;
+}
+nav form input {
+  margin-bottom: 1rem;
+  border-radius: 50px;
+  border: none;
+  height: 3rem;
+  padding-inline: 1rem;
+}
+
+#submit {
+  opacity: 0;
+  background-color: #311968;
+  color: #ffffff;
+  transition: background 0.5s, opacity 0.5s;
+}
+
+#submit:hover {
+  background-color: #1c0d3f;
+}
+
+input:not(:placeholder-shown) + #submit {
+  opacity: 1;
+}
+
+.on {
+  position: absolute;
+  right: 100%;
+}
+
+/*////////////////////////////////
+              MAIN
+////////////////////////////////*/
+main {
+  position: relative;
+  text-align: end;
+  padding: 0 1rem 1rem 1rem;
+}
+
+main > .picContainer {
+  width: 30rem;
+  height: 30rem;
+  border: 10px solid #8257e5;
+  border-radius: 50%;
+  margin: 3rem 0 6rem 4.5rem;
+}
+main > .picContainer img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+ul {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.7215686275) 53.65%, rgba(62, 56, 56, 0.4196078431) 100%);
+}
+ul li {
+  display: flex;
+  align-items: center;
+  line-height: 2.4rem;
+}
+ul li p {
+  margin-left: 1rem;
+}
+
+/*////////////////////////////////
+             FOOTER
+////////////////////////////////*/
+footer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 3rem 2rem 3rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+footer img {
+  width: 3rem;
+  margin: 0 1rem 0 0;
+}
+
+/*////////////////////////////////
+          SCREEN 375px
+////////////////////////////////*/
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+  main > .picContainer {
+    width: 35rem;
+    height: 35rem;
+    margin: 3rem 0 6rem 6rem;
+  }
+  ul {
+    margin-left: 1rem;
+  }
+}
+/*////////////////////////////////
+          SCREEN 425px
+////////////////////////////////*/
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+  main > .picContainer {
+    width: 38rem;
+    height: 38rem;
+    margin: 3rem 0 6rem 8.5rem;
+  }
+  ul li:nth-child(4) img {
+    height: 2rem;
+  }
+  ul li p {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+  }
+  ul li img {
+    width: 2.5rem;
+  }
+}
+/*////////////////////////////////
+          SCREEN 480px
+////////////////////////////////*/
+@media (min-width: 480px) {
+  body {
+    overflow: initial;
+  }
+  .container {
+    margin-top: 1rem;
+    width: 375px;
+    position: relative;
+  }
+  .menu {
+    display: none;
+  }
+  /*//////// MAIN //////////*/
+  main > .picContainer {
+    margin: 3rem 0 6rem 4rem;
+  }
+  /*/////////// NAV /////////*/
+  nav {
+    position: absolute;
+    top: auto;
+    bottom: -15rem;
+    height: max-content;
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  nav form label {
+    padding: 2rem;
+  }
+  .on {
+    right: 0;
+  }
+}
+/*////////////////////////////////
+          SCREEN 750px
+////////////////////////////////*/
+@media (min-width: 750px) {
+  .container {
+    width: 400px;
+    margin: 2rem 0 0 2rem;
+    position: static;
+  }
+  /*//////////// MENU //////////*/
+  .menu {
+    display: none;
+  }
+  /*//////////// NAV ///////////////*/
+  nav {
+    top: 0;
+    bottom: auto;
+    right: 0;
+    width: 45%;
+    height: auto;
+    padding: 6.5rem 5% 0 5%;
+    font-size: 3rem;
+  }
+  /*/////////////// MAIN //////////////*/
+  main > .picContainer {
+    margin: 3rem 0 6rem 6rem;
+  }
+}
+/*////////////////////////////////
+          SCREEN 1024px
+////////////////////////////////*/
+@media (min-width: 1024px) {
+  nav {
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem;
+  }
+}
+/*////////////////////////////////
+          SCREEN 1400px
+////////////////////////////////*/
+@media (min-width: 1400px) {
+  .container {
+    width: 600px;
+    margin: 4rem 0 0 4rem;
+  }
+  /*////////////// HEADER ///////////*/
+  header img {
+    width: 5rem;
+    height: 5rem;
+  }
+  header .boxInfoHeader {
+    font-size: 3.5rem;
+  }
+  .logoHeader {
+    padding: 1.5rem;
+  }
+  /*//////////////// MAIN /////////////*/
+  main > .picContainer {
+    margin: 3rem 0 6rem 8rem;
+  }
+  ul li img {
+    width: 3rem;
+  }
+  ul li p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  ul li:nth-child(4) img {
+    height: 2.3rem;
+  }
+  /*//////////////////// NAV ///////////*/
+  nav {
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem;
+  }
+  nav form label {
+    padding: 2rem;
+  }
+  nav form input {
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    border: none;
+    height: 4rem;
+    font-size: 2rem;
+    padding-inline: 1rem;
+  }
+  /*//////////////////// FOOTER ///////////*/
+  footer {
+    font-size: 2.5rem;
+  }
+  footer img {
+    width: 3.5rem;
+  }
+}
+/*////////////////////////////////
+          SCREEN 2500px
+////////////////////////////////*/
+@media (min-width: 2500px) {
+  .container {
+    width: 32%;
+    max-width: 40%;
+    margin: 6rem 0 0 6rem;
+  }
+  /*////////////// HEADER ///////////*/
+  header {
+    padding: 4rem 0 4rem 4rem;
+  }
+  header .boxInfoHeader {
+    font-size: 6rem;
+  }
+  header img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .logoHeader {
+    padding: 2rem;
+    border: 2px solid #f1f1f1;
+  }
+  /*//////////////// MAIN /////////////*/
+  main > .picContainer {
+    width: 80rem;
+    height: 80rem;
+    margin: 3rem 0 19rem 13rem;
+    border: 20px solid #8257e5;
+  }
+  ul {
+    margin-left: 4rem;
+    padding: 3rem;
+  }
+  ul li p {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  ul li img {
+    width: 6rem;
+  }
+  ul li:nth-child(4) img {
+    height: 4.5rem;
+  }
+  /*//////////////////// NAV ///////////*/
+  nav {
+    width: 50%;
+    padding: 6.5rem 15% 0 3rem;
+  }
+  nav form label {
+    padding: 2rem;
+    font-size: 7rem;
+  }
+  nav form input {
+    margin-bottom: 2rem;
+    height: 7rem;
+    font-size: 4rem;
+    padding-inline: 2rem;
+  }
+  /*//////////////////// FOOTER ///////////*/
+  footer {
+    font-size: 4rem;
+    padding: 5rem 4rem 5rem 0;
+  }
+  footer img {
+    width: 5.5rem;
+    margin: 0 2rem 0 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
