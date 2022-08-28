@@ -1,5 +1,25 @@
 $text-color: #ffffff;
 $border-color: #f1f1f1;
 $bg-color: #0e1218;
+$bg-nav-color: #8257e56e;
 $container-bg-color: #000000;
 $border-img-color: #8257e5;
+$button-color: #311968;
+$button-color-hover: #1c0d3f;
+
+:root{
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Prompt', sans-serif;
+  color: $text-color;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
